@@ -1,0 +1,26 @@
+# Ambiente
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Dados pesados
+data/raw/
+*.parquet
+*.csv
+*.xlsx
+
+# Modelos
+*.pkl
+*.joblib
+mlruns/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
