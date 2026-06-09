@@ -5,7 +5,12 @@ Uso: python -m src.models.train
 """
 
 import os
+import sys
 from pathlib import Path
+
+# Fix Windows cp1252 — MLflow imprime emojis no end_run()
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 import mlflow
 import mlflow.xgboost
